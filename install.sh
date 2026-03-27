@@ -85,7 +85,6 @@ copy_source_files() {
     log "Source file copy: $src_dir → $dest_root"
     echo ""
 
-    # ── Wipe old dest and recreate ──────────────────────────────────────
     if [[ -d "$dest_root" ]]; then
         log "Removing old $dest_root …"
         rm -rf "$dest_root"
